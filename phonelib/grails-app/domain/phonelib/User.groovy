@@ -1,13 +1,13 @@
 package phonelib
 
 class User {
-	String userName
+	String login
 	String password
 
 	static constraints = {
-		userName(blank:false, nullable:false, unique:true)
+		login(blank:false, nullable:false, unique:true)
 		password(blank:false, password:true)
 	}
-	//static belongsTo=[role:Role]
-	static hasMany=[books:Book]
+	
+	static hasMany=[borrow:Borrow,book:Book]
 }

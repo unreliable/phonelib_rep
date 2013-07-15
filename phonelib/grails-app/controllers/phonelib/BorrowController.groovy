@@ -1,6 +1,6 @@
 package phonelib
 
-class UserController {
+class BorrowController {
 
     def scaffold = true
 }

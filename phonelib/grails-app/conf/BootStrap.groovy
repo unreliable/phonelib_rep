@@ -16,13 +16,12 @@ class BootStrap {
 				break;
 		}
 	}
-	def destroy = {
-	}
-
+    def destroy = {
+    }
 	void createTestingUsers(){
 		for(i in 1..15) {
 			def jane = new User(
-					userName:"knight${i}",
+					login:"knight${i}",
 					password:"123456",
 					)
 			jane.save()
