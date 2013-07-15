@@ -8,4 +8,6 @@ class User {
 		userName(blank:false, nullable:false, unique:true)
 		password(blank:false, password:true)
 	}
+	//static belongsTo=[role:Role]
+	static hasMany=[books:Book]
 }
