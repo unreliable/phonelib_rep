@@ -35,7 +35,7 @@ class BootStrap {
 		for(i in 1..15) {
 			def book1 = new Book(
 					title:"title${i}",
-					isbn13:"1234567890123",
+					isbn13:"9787111187776",
 					)
 			book1.save()
 			if(book1.hasErrors()){

@@ -9,5 +9,5 @@ class User {
 		password(blank:false, password:true)
 	}
 	
-	static hasMany=[borrow:Borrow,book:Book]
+	static hasMany=[borrow:Borrow,own:Own]
 }
