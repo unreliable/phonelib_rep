@@ -1,4 +1,5 @@
-<div id="footer">
-	<hr />
-	&copy; 2013 created by wanderknight.
-</div>
+	<hr>
+
+	<footer>
+		<p>&copy; 2013 created by wanderknight.</p>
+	</footer>
