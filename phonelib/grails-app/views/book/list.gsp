@@ -9,15 +9,7 @@
 	</head>
 		
 	<body>
-		<div id="douban"></div>
 
-		<a href="#list-book" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
 		<div id="list-book" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -39,7 +31,7 @@
 						<td>${fieldValue(bean: bookInstance, field: "isbn13")}</td>
 						<td id=${bookInstance.isbn13}></td>
 						
-<script type="text/javascript" src="../js/douban_api.js"></script>
+<script type="text/javascript" src="/phonelib/js/douban_api.js"></script>
 <script>
 //alert(${bookInstance.isbn13});
 DOUBAN.apikey = 
@@ -53,6 +45,7 @@ DOUBAN.apikey =
 	    }
 	})
 </script>
+
 					
 					</tr>
 				</g:each>
@@ -62,8 +55,12 @@ DOUBAN.apikey =
 				<g:paginate total="${bookInstanceTotal}" />
 			</div>
 		</div>
+
+<script> 
+      $(function () { 
+        $('#myTab a:last').tab('show');})//初始化显示哪个tab 
+</script>
 	</body>
 
 
-	
 </html>

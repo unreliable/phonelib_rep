@@ -32,7 +32,7 @@ class BootStrap {
 	}
 
 	void createTestingBooks(){
-		for(i in 1..15) {
+		for(i in 1..1) {
 			def book1 = new Book(
 					title:"title${i}",
 					isbn13:"9787111187776",

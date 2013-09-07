@@ -1,0 +1,20 @@
+	<div class="span3 bs-docs-sidebar">
+		<ul class="nav nav-list affix" data-offset-top="200">
+			<li><a href="#mybook">我的图书<i class="icon-chevron-right"></i></a></li>
+			<li><a href="#inbook">借入图书</a></li>
+			<li><a href="#outbook">借出图书</a></li>
+		</ul>
+	</div>
+	
+		<div class="span9">
+		<section id="mybook"><h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		<h1>mybook<h1><br>
+		</section>
+		<section id="inbook"><h1>inbook<h1><br><h1>inbook<h1><br><h1>inbook<h1><br><h1>inbook<h1><br><h1>inbook<h1><br><h1>inbook<h1><br></section>
+		<section id="outbook"><h1>outbook<h1></section>
+	</div>
